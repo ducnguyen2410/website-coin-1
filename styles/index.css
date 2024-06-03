@@ -70,3 +70,19 @@ body {
     border-color: #e2c2ff;
     padding: 2px;
 }
+
+
+.history {
+    margin-top: 40px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.history-text {
+    width: 40%;
+    color: white;
+}
