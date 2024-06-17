@@ -30,6 +30,7 @@ body {
 }
 
 .banner-section img {
+  width: 60rem;
   border-width: 5px;
   border-color: black !important;
   border-radius: 10px;
