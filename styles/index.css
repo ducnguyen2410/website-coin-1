@@ -13,15 +13,18 @@ body {
 }
 
 .banner-section {
-  background-image: url("./../images/website9_background3.webp");
-  height: 100vh;
   padding-bottom: 50px;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
   justify-content: center;
+  background-image: url("./../images/website10_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .banner-section::before {
@@ -64,6 +67,7 @@ body {
 
 .contact-section {
   width: 100%;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,8 +127,6 @@ img {
 
 .footer {
   width: 100%;
-  height: 100vh;
-  background-image: url("./../images/website9_background3.webp");
 }
 
 #collection {
