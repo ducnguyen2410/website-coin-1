@@ -1,22 +1,22 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: #cbf3f0;
 }
 
 body {
-  /* background-image: url("../images/background_web2.png"); */
   width: 100%;
   overflow: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: "Space Grotesk", sans-serif;
-  padding: 15px;
 }
 
 .banner-section {
-  margin-top: 2rem;
+  background-image: url("./../images/website9_background3.webp");
+  height: 100vh;
+  padding-bottom: 50px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -24,9 +24,26 @@ body {
   justify-content: center;
 }
 
+.banner-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust the alpha value (0.75) to make it darker or lighter */
+  z-index: 1;
+}
+
+.banner-section > * {
+  position: relative;
+  z-index: 2;
+}
+
 .banner_intro {
   font-size: 3rem;
   font-weight: bold;
+  color: white;
 }
 
 .banner-section img {
@@ -94,13 +111,20 @@ img {
 .history-text {
   width: 40%;
   color: black;
+  font-weight: 600;
 }
 
 .history-text_2 {
   font-size: 30px;
   width: 40%;
-  color: black;
+  color: white;
   font: bold;
+}
+
+.footer {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./../images/website9_background3.webp");
 }
 
 #collection {
