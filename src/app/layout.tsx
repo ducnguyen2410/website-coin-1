@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} w-full h-screen overflow-auto scroll-smooth`}>{children}</body>
+      <body
+        className={`${inter.className} w-full h-screen overflow-auto scroll-smooth`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

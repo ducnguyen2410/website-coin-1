@@ -8,6 +8,12 @@ import pumpfund from "../../public/EmT4yP6S_400x400.jpg";
 import telegram from "../../public/teleIcon.svg";
 import twitter from "../../public/twitterIcon.svg";
 import apestore from "../../public/logoApeStore.png";
+import first from "../../public/1.jpg";
+import second from "../../public/2.jpeg";
+import third from "../../public/3.jpeg";
+import fourth from "../../public/4.jpg";
+import fifth from "../../public/5.jpeg";
+import seventh from "../../public/7.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -63,8 +69,8 @@ export default function Home() {
           <span>$MANIFEST</span>
         </div>
       </div>
-      <div className="flex flex-col gap-5 my-20">
-        <span className="text-[3rem] block text-center mb-10">About us</span>
+      <div className="flex flex-col gap-5 py-20" id="images1">
+        <span className="text-[3rem] block text-center mb-10 text-white">About us</span>
         <QuestionTag
           question="What is this project's concept about ?"
           answer={`Manifesting is basically like telling the cosmos: "Hey, I want this" with a belief to make it real. It seems like magic, and we are all the magicians in our own stories. So, think large, aim high, because you never know, maybe the universe can surprise you with something truly amazing!`}
@@ -85,7 +91,7 @@ export default function Home() {
           activeId={currentWorking}
         />
       </div>
-      <div className="w-full flex flex-row items-center justify-center mt-20 gap-5 border-y-[2px] border-solid border-black py-2 font-bold bg-[#CCE3DE]">
+      <div className="w-full flex flex-row items-center justify-center gap-5 border-y-[2px] border-solid border-black py-2 font-bold bg-[#CCE3DE]">
         <span>$MANIFEST</span>
         <span>$MANIFEST</span>
         <span>$MANIFEST</span>
@@ -97,6 +103,18 @@ export default function Home() {
         <span>$MANIFEST</span>
         <span>$MANIFEST</span>
         <span>$MANIFEST</span>
+      </div>
+      <div className="flex flex-col gap-5 py-20" id="images">
+        <span className="text-[3rem] block text-center mb-10 text-white">
+          Favorite quote
+        </span>
+        <div className="flex flex-wrap gap-10 items-center justify-center">
+          <Image src={first} alt="" width={500} height={400} />
+          <Image src={second} alt="" width={500} height={400} />
+          <Image src={third} alt="" width={500} height={400} />
+          <Image src={fourth} alt="" width={500} height={400} />
+          <Image src={fifth} alt="" width={500} height={400} />
+        </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-20 mb-[5rem]">
         <span className="text-[3rem]">Contact us</span>
