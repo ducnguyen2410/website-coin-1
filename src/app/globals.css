@@ -10,3 +10,7 @@
 #images1 {
     background-image: url("./../../public/8.png");
 }
+
+.hello {
+    display: flex;
+}
