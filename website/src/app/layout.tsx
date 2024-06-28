@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "$Manifest",
+  title: "$MANIFEST",
   description: "Greatest coin ever",
 };
 
@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} w-full h-screen bg-white`}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} w-full h-screen overflow-auto scroll-smooth`}>{children}</body>
     </html>
   );
 }
