@@ -1,25 +1,26 @@
 "use client";
 import Image from "next/image";
-import symbolImage from "./../../public/symbol.webp";
-import QuestionTag from "../../components/QuestionTag";
 import copyIcon from "../../public/copy.svg";
 import tickIcon from "../../public/tick.svg";
 import pumpfund from "../../public/EmT4yP6S_400x400.jpg";
 import telegram from "../../public/teleIcon.svg";
 import twitter from "../../public/twitterIcon.svg";
-import apestore from "../../public/logoApeStore.png";
-import first from "../../public/1.jpg";
-import second from "../../public/2.jpeg";
-import third from "../../public/3.jpeg";
-import fourth from "../../public/4.jpg";
-import fifth from "../../public/5.jpeg";
-import seventh from "../../public/7.png";
+import brainLogo from "@/public/brainImage.png";
 import { useState } from "react";
+import image1 from "@/public/Untitled (3).png";
+import image2 from "@/public/Untitled (4).png";
+import image3 from "@/public/Untitled (5).png";
+import image4 from "@/public/Untitled (6).png";
+import image5 from "@/public/Untitled (7).png";
+import image6 from "@/public/Untitled (8).png";
+import image7 from "@/public/Untitled (9).png";
+import image8 from "@/public/Untitled (10).png";
+import image9 from "@/public/Untitled (11).png";
 
 export default function Home() {
   const [currentWorking, setCurrentWorking] = useState(-1);
   const [copy, setCopy] = useState(false);
-  const contractId = "fdfd";
+  const contractId = "";
   function handleFunction(id: number) {
     setCurrentWorking(id === currentWorking ? -1 : id);
   }
@@ -34,149 +35,126 @@ export default function Home() {
     }
   };
   return (
-    <div className="w-full h-full flex flex-col pt-20 bg-[#F6FFF8] overflow-auto">
-      <div className="flex flex-col w-full">
-        <span className="text-[4rem] mb-10 ml-20">Hello there,</span>
-        <div className="flex flex-row items-center gap-[5rem] justify-center">
-          <Image src={symbolImage} alt="Symbol" width={200} />
-          <span className="text-[2rem] w-[40%]">
-            Are you looking for a peaceful and trusted community ? If yes, then
-            you found the right place.
-          </span>
-        </div>
-        <div
-          className="flex justify-end mr-[30rem] mt-10"
-          onClick={scrollToIntro}
-        >
-          <div className="border-[2px] bg-[#EAF4F4] border-solid border-black rounded-[50px] text-black p-6 px-10 cursor-pointer hover:bg-[#CCE3DE] transition-[0.3s] hover:text-black scroll-smooth">
-            <span className="font-[600]">Know more about us</span>
+    <div className="w-full h-full flex flex-col overflow-auto">
+      <div className="w-full h-full" id="container">
+        <div className="flex w-full" id="banner">
+          <div id="slider" style={{ "--quantity": 9 } as any}>
+            <div id="item" style={{ "--position": 1 } as any}>
+              <Image src={image1} alt="" />
+            </div>
+            <div id="item" style={{ "--position": 2 } as any}>
+              <Image src={image2} alt="" />
+            </div>
+            <div id="item" style={{ "--position": 3 } as any}>
+              <Image src={image3} alt="" />
+            </div>
+            <div id="item" style={{ "--position": 4 } as any}>
+              <Image src={image4} alt="" />
+            </div>
+            <div id="item" style={{ "--position": 5 } as any}>
+              <Image src={image5} alt="" />
+            </div>
+            <div id="item" style={{ "--position": 6 } as any}>
+              <Image src={image6} alt="" />
+            </div>
+            <div id="item" style={{ "--position": 7 } as any}>
+              <Image src={image7} alt="" />
+            </div>
+            <div id="item" style={{ "--position": 8 } as any}>
+              <Image src={image8} alt="" />
+            </div>
+            <div id="item" style={{ "--position": 9 } as any}>
+              <Image src={image9} alt="" />
+            </div>
+          </div>
+          <div id="content">
+            <div className="author">
+              <span className="text-center block">$MANIFEST</span>
+            </div>
+            <div id="model"></div>
           </div>
         </div>
-        <div
-          className="w-full flex flex-row items-center justify-center mt-20 gap-5 border-y-[2px] border-solid border-black py-2 font-bold bg-[#CCE3DE] scroll-smooth"
-          id="intro"
-        >
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-          <span>$MANIFEST</span>
-        </div>
-      </div>
-      <div className="flex flex-col gap-5 py-20" id="images1">
-        <span className="text-[3rem] block text-center mb-10 text-white">About us</span>
-        <QuestionTag
-          question="What is this project's concept about ?"
-          answer={`Manifesting is basically like telling the cosmos: "Hey, I want this" with a belief to make it real. It seems like magic, and we are all the magicians in our own stories. So, think large, aim high, because you never know, maybe the universe can surprise you with something truly amazing!`}
-          handleFunction={handleFunction}
-          id={0}
-          activeId={currentWorking}
-        />
-        <QuestionTag
-          question="What are the future plans of this project ?"
-          handleFunction={handleFunction}
-          id={1}
-          activeId={currentWorking}
-        />
-        <QuestionTag
-          question="What are you getting from this project ?"
-          handleFunction={handleFunction}
-          id={2}
-          activeId={currentWorking}
-        />
-      </div>
-      <div className="w-full flex flex-row items-center justify-center gap-5 border-y-[2px] border-solid border-black py-2 font-bold bg-[#CCE3DE]">
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-        <span>$MANIFEST</span>
-      </div>
-      <div className="flex flex-col gap-5 py-20" id="images">
-        <span className="text-[3rem] block text-center mb-10 text-white">
-          Favorite quote
-        </span>
-        <div className="flex flex-wrap gap-10 items-center justify-center">
-          <Image src={first} alt="" width={500} height={400} />
-          <Image src={second} alt="" width={500} height={400} />
-          <Image src={third} alt="" width={500} height={400} />
-          <Image src={fourth} alt="" width={500} height={400} />
-          <Image src={fifth} alt="" width={500} height={400} />
-        </div>
-      </div>
-      <div className="flex flex-col items-center justify-center mt-20 mb-[5rem]">
-        <span className="text-[3rem]">Contact us</span>
-        <div className="p-2 border-[3px] border-solid border-black w-[80%] text-center rounded-[20px] mt-5 bg-[#CCE3DE]">
-          <span className="flex flex-row items-center justify-center gap-3">
-            CA:{" "}
-            {!contractId ? (
-              <span>Not available</span>
-            ) : (
-              <div className="flex flex-row gap-5">
-                <span>{contractId}</span>
-                {!copy && (
-                  <Image
-                    src={copyIcon}
-                    alt=""
-                    className="cursor-pointer"
-                    onClick={() => handleCopy()}
-                  />
-                )}
-                {copy && <Image src={tickIcon} alt="" />}
-              </div>
-            )}
+        <div className="flex flex-col items-center justify-center my-20 mb-[5rem]">
+          <span className="text-[3rem] text-white italic">Manifestation</span>
+          <span className="text-white text-[0.9rem] font-bold mt-10">
+            Contract Address (Click to copy)
           </span>
-        </div>
-        <div className="flex flex-row gap-20 mt-10">
-          <a
-            href="https://t.me/ishiinubase"
-            className="rounded-full border-[3px] border-solid border-black"
-            target="_blank"
-          >
-            <Image
-              src={telegram}
-              alt="Telegram"
-              width="65"
-              className="rounded-full"
-            />
-          </a>
-          <a
-            href="https://x.com/ishicoinbase"
-            className="rounded-full border-[3px] border-solid border-black"
-            target="_blank"
-          >
-            <Image
-              src={twitter}
-              alt="Twitter"
-              width="65"
-              className="rounded-full"
-            />
-          </a>
-          <a
-            href="https://t.me/ishiinubase"
-            className="rounded-full border-[3px] border-solid border-black"
-            target="_blank"
-          >
-            <Image
-              src={pumpfund}
-              alt="Pump Fund"
-              height="65"
-              width="65"
-              className="rounded-full"
-            />
-          </a>
+          <div className="p-2 border-[3px] border-solid border-black w-[80%] text-center rounded-[20px] mt-5 bg-black">
+            <span className="flex flex-row items-center justify-center gap-3 text-white">
+              CA:{" "}
+              {!contractId ? (
+                <span>Not available</span>
+              ) : (
+                <div className="flex flex-row gap-5">
+                  <span>{contractId}</span>
+                  {!copy && (
+                    <Image
+                      src={copyIcon}
+                      alt=""
+                      className="cursor-pointer"
+                      onClick={() => handleCopy()}
+                    />
+                  )}
+                  {copy && <Image src={tickIcon} alt="" />}
+                </div>
+              )}
+            </span>
+          </div>
+          <div className="w-full mt-10 p-20">
+            <div className="flex flex-col gap-10 my-10 items-center border-[3px] border-solid border-white rounded-[10px] py-5">
+              <span className="font-bold text-[1.7rem] text-white">
+                Contact us through
+              </span>
+              <div className="flex flex-row gap-5">
+                <div className="flex flex-row gap-4 text-white items-center">
+                  <span className="font-bold italic">Telegram:</span>
+                  <a
+                    href="https://t.me/ishiinubase"
+                    className="rounded-full border-[3px] border-solid border-black"
+                    target="_blank"
+                  >
+                    <Image
+                      src={telegram}
+                      alt="Telegram"
+                      width="65"
+                      className="rounded-full"
+                    />
+                  </a>
+                </div>
+                <div className="flex flex-row gap-4 text-white items-center">
+                  <span className="font-bold italic">Twitter:</span>
+                  <a
+                    href="https://x.com/ishicoinbase"
+                    className="rounded-full border-[3px] border-solid border-black"
+                    target="_blank"
+                  >
+                    <Image
+                      src={twitter}
+                      alt="Twitter"
+                      width="65"
+                      className="rounded-full"
+                    />
+                  </a>
+                </div>
+                <div className="flex flex-row gap-4 text-white items-center ">
+                  <span className="font-bold italic">Pump:</span>
+                  <a
+                    href="https://t.me/ishiinubase"
+                    className="rounded-full border-[3px] border-solid border-black"
+                    target="_blank"
+                  >
+                    <Image
+                      src={pumpfund}
+                      alt="Pump Fund"
+                      height="65"
+                      width="65"
+                      className="rounded-full"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
