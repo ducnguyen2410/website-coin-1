@@ -20,7 +20,7 @@ import image9 from "@/public/Untitled (11).png";
 export default function Home() {
   const [currentWorking, setCurrentWorking] = useState(-1);
   const [copy, setCopy] = useState(false);
-  const contractId = "";
+  const contractId = "6cvrZWgEUkr82yKAmxp5cQu7wgYYBPULf16EUBp4pump";
   function handleFunction(id: number) {
     setCurrentWorking(id === currentWorking ? -1 : id);
   }
@@ -110,7 +110,7 @@ export default function Home() {
                 <div className="flex flex-row gap-4 text-white items-center">
                   <span className="font-bold italic contact-text">Telegram:</span>
                   <a
-                    href="https://t.me/ishiinubase"
+                    href="https://https://t.me/+nX0yM1yeZekzZTg1"
                     className="rounded-full border-[3px] border-solid border-black"
                     target="_blank"
                   >
@@ -125,7 +125,7 @@ export default function Home() {
                 <div className="flex flex-row gap-4 text-white items-center">
                   <span className="font-bold italic contact-text">Twitter:</span>
                   <a
-                    href="https://x.com/ishicoinbase"
+                    href=""
                     className="rounded-full border-[3px] border-solid border-black"
                     target="_blank"
                   >
@@ -140,7 +140,7 @@ export default function Home() {
                 <div className="flex flex-row gap-4 text-white items-center ">
                   <span className="font-bold italic contact-text">Pump:</span>
                   <a
-                    href="https://t.me/ishiinubase"
+                    href="https://pump.fun/6cvrZWgEUkr82yKAmxp5cQu7wgYYBPULf16EUBp4pump"
                     className="rounded-full border-[3px] border-solid border-black"
                     target="_blank"
                   >
