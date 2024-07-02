@@ -68,14 +68,15 @@ export default function Home() {
             </div>
           </div>
           <div id="content">
-            <div className="author">
+            <div id="author">
               <span className="text-center block">$MANIFEST</span>
             </div>
             <div id="model"></div>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-20 mb-[5rem]">
-          <span className="text-[3rem] text-white italic">Manifestation</span>
+          <span className="text-[3rem] text-white italic">`Manifestation`</span>
+          <span className="explanation">Make your dream become your reality</span>
           <span className="text-white text-[0.9rem] font-bold mt-10">
             Contract Address (Click to copy)
           </span>
@@ -100,7 +101,7 @@ export default function Home() {
               )}
             </span>
           </div>
-          <div className="w-full mt-10 p-20">
+          <div className="w-full mt-10 p-20" id="container-contact">
             <div className="flex flex-col gap-10 my-10 items-center border-[3px] border-solid border-white rounded-[10px] py-5">
               <span className="font-bold text-[1.7rem] text-white">
                 Contact us through

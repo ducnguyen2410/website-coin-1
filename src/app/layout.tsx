@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "$MANIFEST",
@@ -17,9 +15,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.className} w-full h-screen overflow-auto scroll-smooth`}
+        className={`w-full h-screen overflow-auto scroll-smooth`}
       >
         {children}
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+        </style>
       </body>
     </html>
   );

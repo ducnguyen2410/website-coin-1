@@ -3,90 +3,118 @@
 @tailwind utilities;
 
 body {
-    background-image: url("./../../public/background2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover
+  background-image: url("./../../public/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Playwrite DE Grund", cursive;
 }
 
 #container {
-    width: 100%;
+  width: 100%;
+}
+
+.explanation {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 #banner {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 10px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 #banner #slider {
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    top: 10%;
-    left: calc(50% - 100px);
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    animation: autoRun 20s linear infinite;
-    z-index: 2;
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 20s linear infinite;
+  z-index: 2;
 }
 
-@keyframes  autoRun {
-    from {
-        transform: perspective(1000px) rotateX(-20deg) rotateY(0deg);
-    } to {
-        transform: perspective(1000px) rotateX(-20deg) rotateY(360deg);
-    }
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-20deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-20deg) rotateY(360deg);
+  }
 }
 
 #banner #slider #item {
-    position: absolute;
-    inset: 0 0 0 0;
-    transform:
-    rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) 
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
     translateZ(550px);
 }
 
 #banner #slider #item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #banner #content {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1400px, 100vw);
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #banner #content span {
-    font-size: 5em;
-    line-height: 1em;
-    color: white;
+  font-size: 5em;
+  line-height: 1em;
+  color: white;
 }
 
 #banner #content #model {
-    background-image: url("./../../public/brainImage-600x500.png");
-    width: 100%;
-    height: 75vh;
-    position: absolute;
-    bottom: 300px;
-    left: -20px;
-    background-size: auto 150%;
-    background-repeat: no-repeat;
-    background-position: top center;
+  background-image: url("./../../public/brainImage-600x500.png");
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  bottom: 300px;
+  left: -20px;
+  background-size: auto 150%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 #author {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+@media only screen and (max-device-width: 450px) and (max-device-width: 950px) {
+  #author span {
+    font-size: 2em !important;
+    height: 50px;
+  }
+
+  #container-contact {
+    padding: 5px;
+  }
+
+  .explanation {
+    font-size: 1em;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 40px;
+  }
 }
