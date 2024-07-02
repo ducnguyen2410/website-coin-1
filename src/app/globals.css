@@ -122,4 +122,8 @@ body {
     margin-top: 5px;
     margin-bottom: 40px;
   }
+
+  .contact-text {
+    font-size: 0.7em;
+  }
 }

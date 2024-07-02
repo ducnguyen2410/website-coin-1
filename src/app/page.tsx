@@ -108,7 +108,7 @@ export default function Home() {
               </span>
               <div className="flex flex-row gap-5">
                 <div className="flex flex-row gap-4 text-white items-center">
-                  <span className="font-bold italic">Telegram:</span>
+                  <span className="font-bold italic contact-text">Telegram:</span>
                   <a
                     href="https://t.me/ishiinubase"
                     className="rounded-full border-[3px] border-solid border-black"
@@ -123,7 +123,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex flex-row gap-4 text-white items-center">
-                  <span className="font-bold italic">Twitter:</span>
+                  <span className="font-bold italic contact-text">Twitter:</span>
                   <a
                     href="https://x.com/ishicoinbase"
                     className="rounded-full border-[3px] border-solid border-black"
@@ -138,7 +138,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex flex-row gap-4 text-white items-center ">
-                  <span className="font-bold italic">Pump:</span>
+                  <span className="font-bold italic contact-text">Pump:</span>
                   <a
                     href="https://t.me/ishiinubase"
                     className="rounded-full border-[3px] border-solid border-black"
