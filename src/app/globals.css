@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Playwrite DE Grund";
+    src: url("./../../public/Playwrite_DE_Grund/PlaywriteDEGrund-VariableFont_wght.ttf");
+}
+
 body {
   background-image: url("./../../public/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Playwrite DE Grund", cursive;
+  font-family: "Playwrite DE Grund";
 }
 
 #container {

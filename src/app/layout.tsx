@@ -18,10 +18,6 @@ export default function RootLayout({
         className={`w-full h-screen overflow-auto scroll-smooth`}
       >
         {children}
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
-        </style>
       </body>
     </html>
   );
