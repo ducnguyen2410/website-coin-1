@@ -133,7 +133,7 @@ export default function Home() {
                       src={twitter}
                       alt="Twitter"
                       width="65"
-                      className="rounded-full"
+                      className="rounded-full x"
                     />
                   </a>
                 </div>
