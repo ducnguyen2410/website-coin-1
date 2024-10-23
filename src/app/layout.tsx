@@ -3,8 +3,8 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "$MANIFEST",
-  description: "Greatest coin ever",
+  title: "Destiny",
+  description: "Everything is related to destiny",
 };
 
 export default function RootLayout({

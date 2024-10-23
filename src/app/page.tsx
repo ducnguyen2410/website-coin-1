@@ -20,7 +20,7 @@ import image9 from "@/public/Untitled (11).png";
 export default function Home() {
   const [currentWorking, setCurrentWorking] = useState(-1);
   const [copy, setCopy] = useState(false);
-  const contractId = "6cvrZWgEUkr82yKAmxp5cQu7wgYYBPULf16EUBp4pump";
+  const contractId = "Coming soon";
   function handleFunction(id: number) {
     setCurrentWorking(id === currentWorking ? -1 : id);
   }
@@ -69,14 +69,14 @@ export default function Home() {
           </div>
           <div id="content">
             <div id="author">
-              <span className="text-center block">$MANIFEST</span>
+              <span className="text-center block">Destiny</span>
             </div>
             <div id="model"></div>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-20 mb-[5rem]">
-          <span className="text-[3rem] text-white italic">`Manifestation`</span>
-          <span className="explanation">Make your dream become your reality</span>
+          <span className="text-[3rem] text-white italic">`Destiny`</span>
+          <span className="explanation">Everything is related to destiny.</span>
           <span className="text-white text-[0.9rem] font-bold mt-10">
             Contract Address (Click to copy)
           </span>
@@ -104,13 +104,13 @@ export default function Home() {
           <div className="w-full mt-10 p-20" id="container-contact">
             <div className="flex flex-col gap-10 my-10 items-center border-[3px] border-solid border-white rounded-[10px] py-5">
               <span className="font-bold text-[1.7rem] text-white">
-                Contact us through
+                Contact us
               </span>
               <div className="flex flex-row gap-5">
                 <div className="flex flex-row gap-4 text-white items-center">
                   <span className="font-bold italic contact-text">Telegram:</span>
                   <a
-                    href="https://https://t.me/+nX0yM1yeZekzZTg1"
+                    href=""
                     className="rounded-full border-[3px] border-solid border-black"
                     target="_blank"
                   >
@@ -140,7 +140,7 @@ export default function Home() {
                 <div className="flex flex-row gap-4 text-white items-center ">
                   <span className="font-bold italic contact-text">Pump:</span>
                   <a
-                    href="https://pump.fun/6cvrZWgEUkr82yKAmxp5cQu7wgYYBPULf16EUBp4pump"
+                    href=""
                     className="rounded-full border-[3px] border-solid border-black"
                     target="_blank"
                   >
